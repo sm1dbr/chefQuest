@@ -1,1 +1,20 @@
-<p>recipe-list works!</p>
+<div class="recipe-list">
+    <h2>Receitas</h2>
+    <div class="recipes-container">
+        <div class="recipe-card" *ngFor="let recipe of recipes">
+            <h3>{{ recipe.name }}</h3>
+            <p><strong>Categoria:</strong> {{ recipe.category }} </p>
+            <p><strong>Appliance:</strong> {{ recipe.appliance }} </p>
+            <p><strong>Tipo de comida:</strong> {{ recipe.foodType }} </p>
+            <p><strong>Dieta:</strong> {{ recipe.dietType }} </p>
+            <p><strong>Raridade</strong> {{ recipe.rarity }} </p>
+            <p><strong>Preço:</strong> {{ recipe.price }} </p>
+            <p><strong>Ingredientes:</strong></p>
+            <ul>
+                <li *ngFor="let ingredient of recipe.ingredients">
+                    {{ ingredient.name }}
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
