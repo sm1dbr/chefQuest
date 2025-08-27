@@ -11,6 +11,7 @@ export interface Ingredient {
 
 export interface Recipe {
     name: string;
+    image?: string;
     rarity: 'Common' | 'Rare' | 'Epic' | 'Legendary';
     category: 'Appetizers' | 'Main courses' | 'Desserts' | 'Drinks';
     appliance: string;

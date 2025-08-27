@@ -12,6 +12,7 @@ export class RecipeService {
   private recipes: Recipe[] = [
     {
       name: 'Beef Wellington',
+      image: 'assets/beefWellington.webp',
       rarity: 'Legendary',
       category: 'Main courses',
       appliance: 'Oven',

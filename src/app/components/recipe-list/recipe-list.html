@@ -3,13 +3,14 @@
     <div class="recipes-container">
         <div class="recipe-card" *ngFor="let recipe of recipes">
             <h3>{{ recipe.name }}</h3>
-            <p><strong>Categoria:</strong> {{ recipe.category }} </p>
+            <img [src]="recipe.image" alt=" {{ recipe.name }}" class="recipe-image">
+            <p><strong>Rarity:</strong> {{ recipe.rarity }} </p>
+            <p><strong>Type:</strong> {{ recipe.category }} </p>
             <p><strong>Appliance:</strong> {{ recipe.appliance }} </p>
-            <p><strong>Tipo de comida:</strong> {{ recipe.foodType }} </p>
-            <p><strong>Dieta:</strong> {{ recipe.dietType }} </p>
-            <p><strong>Raridade</strong> {{ recipe.rarity }} </p>
-            <p><strong>Preço:</strong> {{ recipe.price }} </p>
-            <p><strong>Ingredientes:</strong></p>
+            <p><strong>Food Type:</strong> {{ recipe.foodType }} </p>
+            <p><strong>Diet Type:</strong> {{ recipe.dietType }} </p>
+            <p><strong>Price:</strong> {{ recipe.price }} </p>
+            <p><strong>Ingredients:</strong></p>
             <ul>
                 <li *ngFor="let ingredient of recipe.ingredients">
                     {{ ingredient.name }}

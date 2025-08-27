@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --bg-page: #2e2e2e;
+    --bg-card: #3a3a3a;
+    --text-primary: #f0f0f0;
+    --text-secondary: #c0c0c0;
+    --card-shadow: rgba(0,0,0,0.4);
+}
+
+body {
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
